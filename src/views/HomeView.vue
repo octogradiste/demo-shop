@@ -10,7 +10,8 @@ export default {
 </script>
 
 <template>
-    <div>
+<div class="shop">
+    <div class="items-holder">
         <ShopItem 
             name="NIKE FREE"
             price="199.95"
@@ -30,4 +31,30 @@ export default {
             imageBackgroundColor="rgba(119, 166, 168, 0.2)"
         />
     </div>
+</div>
 </template>
+
+<style>
+.shop {
+    display: flex;
+    justify-content: center;
+}
+.items-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 50px;
+}
+
+@media (min-width: 1650px) {
+    .items-holder {
+        grid-template-columns: repeat(3, 500px);
+    }
+}
+
+@media (max-width: 1100px) {
+    .items-holder {
+        grid-template-columns: 500px;
+    }
+
+}
+</style>

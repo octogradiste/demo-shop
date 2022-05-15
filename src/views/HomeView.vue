@@ -28,6 +28,7 @@ export default {
 .shop {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .items-holder {
     display: grid;
